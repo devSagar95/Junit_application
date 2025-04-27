@@ -6,11 +6,10 @@ pipeline {
         DB_PASS = 'Sagar@95'
     }
 
-    stages {
-        stage('Checkout Code') {
+        stages {
+                stage('Checkout Code') {
             steps {
-                // Uncomment the below if using Git
-                   git 'https://github.com/devSagar95/Junit_application.git'
+                git branch: 'main', url: 'https://github.com/devSagar95/Junit_application.git'
             }
         }
 
