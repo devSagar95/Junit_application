@@ -5,7 +5,9 @@ pipeline {
         DB_USER = 'root'
         DB_PASS = 'Sagar@95' //MY_SQL_DB
     }
-
+    triggers {
+            pollSCM('H/1 * * * *')   // Poll GitHub every 1 minute
+        }
         stages {
                 stage('Checkout Code') {
             steps {
