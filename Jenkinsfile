@@ -25,6 +25,10 @@ pipeline {
         }
 
         stage('Insert Test Results to Database') {
+           tools {
+                maven 'Maven_3.8.8' // the same name you gave in Global Tool Config
+            }
+          
             steps {
                 echo 'Uploading test results into MySQL database...'
                 sh 'mvn compile exec:java -Dexec.mainClass="com.example.TestResultUploader"'
