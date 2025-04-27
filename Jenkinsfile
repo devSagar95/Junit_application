@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DB_USER = 'root'
-        DB_PASS = 'Sagar@95' //MY_SQL_DB_sagar_sa
+        DB_PASS = 'Sagar@95' //MY_SQL_DB_sagar_sag
     }
 
         stages {
