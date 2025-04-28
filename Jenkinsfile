@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DB_USER = 'root'
-        DB_PASS = 'Sagar@95' //MY_SQL_DB
+        DB_PASS = 'Sagar@95' //MY_SQL_DB_Sagar
     }
     triggers {
             pollSCM('* * * * *')   // Poll GitHub every 1 minute
